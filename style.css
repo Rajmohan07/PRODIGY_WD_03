@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #548687;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+#mode-select {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#mode-select button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #191913;
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#mode-select button:hover {
+    background-color: #333;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5vmin;
+    width: min(90vmin, 90vw);
+    aspect-ratio: 1 / 1;
+}
+
+.box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    font-size: 8vmin;
+    border: none;
+    border-radius: 1rem;
+    background-color: #ffffc7;
+    color: #b0413e;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.box:hover:enabled {
+    background-color: #f1f1a5;
+}
+
+#reset-btn,
+#new-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    background-color: #191913;
+    color: #fff;
+    border: none;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
